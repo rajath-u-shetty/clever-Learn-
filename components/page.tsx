@@ -21,12 +21,12 @@ import {
   Copy,
   FileText,
   MessagesSquare,
-  StickyNote,
+  StickyNote
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { title } from "process";
-import { PureComponent, useId } from "react";
+import { useId } from "react";
 import { useQuery } from "react-query";
 import { v4 as uuidv4 } from "uuid";
 
@@ -48,13 +48,12 @@ const cards = [
     icon: <MessagesSquare className="h-4 w-4 mr-2" />,
     description: "View, create, edit, and deleted AI tutors!",
     href: "/tutors",
-  },
-  {
+  },{
     title: "Summary",
     icon: <StickyNote className="h-4 w-4 mr-2" />,
     description: "Summarise youtube videos",
-    href: "/summarise",
-  },
+    href: "/summarise"
+  }
 ];
 
 export default function DashboardPage() {
@@ -87,9 +86,7 @@ export default function DashboardPage() {
   return (
     <main className="flex-1 px-4 py-10 md:py-16 max-w-4xl xl:max-w-6xl mx-auto flex flex-col gap-6">
       <div className="flex flex-col space-y-1">
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-500 via-sky-500 to-indigo-500 bg-clip-text text-transparent">
-          Dashboard
-        </h1>
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-500 via-sky-500 to-indigo-500 bg-clip-text text-transparent">Dashboard</h1>
         <p className="text-muted-foreground font-medium ">
           Welcome back{" "}
           {isLoading ? (
@@ -140,7 +137,7 @@ export default function DashboardPage() {
                       <Skeleton
                         className={cn(
                           "h-4",
-                          i == 0 ? "w-4/5" : i == 1 ? "w-3/5" : "w-2/5"
+                          i == 0 ? "w-4/5" : i == 1 ? "w-3/5" : "w-2/5",
                         )}
                         key={uuidv4()}
                       />
@@ -152,7 +149,7 @@ export default function DashboardPage() {
                     <Link href="/flashcard-sets">
                       {
                         user.generations.filter(
-                          (generation) => generation.type == "flashcard-set"
+                          (generation) => generation.type == "flashcard-set",
                         ).length
                       }{" "}
                       Flashcard Sets
@@ -163,7 +160,7 @@ export default function DashboardPage() {
                     <Link href="/quizzes">
                       {
                         user.generations.filter(
-                          (generation) => generation.type == "quiz"
+                          (generation) => generation.type == "quiz",
                         ).length
                       }{" "}
                       Quizzes
@@ -174,7 +171,7 @@ export default function DashboardPage() {
                     <Link href="/tutors">
                       {
                         user.generations.filter(
-                          (generation) => generation.type == "tutor"
+                          (generation) => generation.type == "tutor",
                         ).length
                       }{" "}
                       Tutors
@@ -242,14 +239,12 @@ export default function DashboardPage() {
                             </Link>
                             <CreatedAt
                               createdAt={new Date(
-                                attempt.createdAt
+                                attempt.createdAt,
                               ).toLocaleDateString()}
                             />
                           </div>
                           <p className="font-bold">
-                            {Math.round(Number(attempt.score) * 100 * 100) /
-                              100}
-                            %
+                            {Math.round(Number(attempt.score) * 100 * 100) / 100}%
                           </p>
                         </div>
                       ))}
@@ -307,7 +302,7 @@ export default function DashboardPage() {
                             </Link>
                             <CreatedAt
                               createdAt={new Date(
-                                tutor.createdAt
+                                tutor.createdAt,
                               ).toLocaleDateString()}
                             />
                           </div>
@@ -365,7 +360,7 @@ export default function DashboardPage() {
                             </Link>
                             <CreatedAt
                               createdAt={new Date(
-                                flashcardSet.createdAt
+                                flashcardSet.createdAt,
                               ).toLocaleDateString()}
                             />
                           </div>
@@ -385,23 +380,17 @@ export default function DashboardPage() {
               </CardFooter>
             </Card>
           </div>
-          {/* <Card className="relative pb-14">
-            <CardHeader>
-              <CardTitle>Bar Graph</CardTitle>
-              <CardDescription>check your stats below</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <PureComponent />
-            </CardContent>
-          </Card>
+          {/* <div className="w-full">
+            <Card className="relative">
+                  <CardHeader>
+                    <CardTitle>Transcribe Video</CardTitle>
+                    <CardDescription>Get summary from videos , Youtube links</CardDescription>
+                  </CardHeader>
+                  <CardContent>
 
-          <Card className="relative pb-14">
-            <CardHeader>
-              <CardTitle>Mind map</CardTitle>
-              <CardDescription>check your stats below</CardDescription>
-            </CardHeader>
-            <CardContent></CardContent>
-          </Card> */}
+                  </CardContent>
+            </Card> 
+         </div> */}
         </div>
       </div>
     </main>
