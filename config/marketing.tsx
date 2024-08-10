@@ -81,7 +81,7 @@ export const faq = [
       <>
         We have a{" "}
         <a
-          href="https://discord.gg/rCGEZwWUPt"
+          href="https://discord"
           className="text-primary underline"
         >
           Discord

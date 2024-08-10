@@ -20,7 +20,7 @@ export function Footer() {
             Discord
           </Button>
         </a>
-        <a href="https://github.com">
+        <a href="https://github.com/rajath-u-shetty/clever-Learn-">
           <Button
             variant="ghost"
             size="sm"
