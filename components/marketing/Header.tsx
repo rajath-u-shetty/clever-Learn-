@@ -13,11 +13,6 @@ export function Header() {
         <h1 className="font-semibold">{siteConfig.name}</h1>
       </div>
       <div className="flex items-center gap-2">
-        <a href="https://github.com/rajath-u-shetty/clever-Learn-" className="mr-4">
-          <Button variant="outline" size="icon">
-            <GitHubLogoIcon className="h-5 w-5" />
-          </Button>
-        </a>
         <SigninButton />
       </div>
     </nav>

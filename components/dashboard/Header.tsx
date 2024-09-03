@@ -35,7 +35,7 @@ export function Header() {
               <FaDiscord className="h-5 w-5" />
             </Button>
           </a>
-          <a href="https://github.com/rajath-u-shetty/clever-Learn-">
+          <a href="">
             <Button variant="ghost" size="icon">
               <GitHubLogoIcon className="h-5 w-5" />
             </Button>
