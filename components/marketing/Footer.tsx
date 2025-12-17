@@ -11,7 +11,7 @@ export function Footer() {
         {new Date().getFullYear()} {siteConfig.name}.
       </p>
       <div className="flex items-center">
-        <a href="https://discord.gg/rCGEZwWUPt">
+        <a href="https://discord.gg/">
           <Button
             variant="ghost"
             size="sm"
@@ -20,7 +20,7 @@ export function Footer() {
             Discord
           </Button>
         </a>
-        <a href="https://github.com/ZachMcM/study-ai">
+        <a href="https://github.com/">
           <Button
             variant="ghost"
             size="sm"

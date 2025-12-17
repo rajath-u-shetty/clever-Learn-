@@ -218,7 +218,7 @@ export function SetSettings({ set }: { set: FlashcardSet }) {
             <Button className="w-full" type="submit">
               Submit{" "}
               {isSetEditing && (
-                <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+                <span className="loader ml-2"></span>
               )}
             </Button>
           </form>

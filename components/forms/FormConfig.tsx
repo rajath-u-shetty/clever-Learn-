@@ -129,10 +129,10 @@ export function FormConfig({
               Upload a plain text, pdf, video, or audio file.
             </p>
           </div>
-          <Button className="w-fit" variant="ghost" onClick={handleContinue}>
+          <Button className="w-fit" variant="default" onClick={handleContinue}>
             Continue{" "}
             {isLoading ? (
-              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+              <span className="loader ml-2 h-4 w-4" />
             ) : (
               <ArrowRight className="h-4 w-4 ml-2" />
             )}
@@ -147,10 +147,10 @@ export function FormConfig({
             className="min-h-[200px] bg-background"
             placeholder="Enter your own subject here (ex: World War II)..."
           />
-          <Button className="w-fit" variant="ghost" onClick={handleContinue}>
+          <Button className="w-fit" variant="default" onClick={handleContinue}>
             Continue{" "}
             {isLoading ? (
-              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+              <span className="loader ml-2 h-4 w-4" />
             ) : (
               <ArrowRight className="h-4 w-4 ml-2" />
             )}
@@ -165,10 +165,10 @@ export function FormConfig({
             value={link}
             placeholder="Enter source link here..."
           />
-          <Button className="w-fit" variant="ghost" onClick={handleContinue}>
+          <Button className="w-fit" variant="default" onClick={handleContinue}>
             Continue{" "}
             {isLoading ? (
-              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+              <span className="loader ml-2 h-4 w-4" />
             ) : (
               <ArrowRight className="h-4 w-4 ml-2" />
             )}

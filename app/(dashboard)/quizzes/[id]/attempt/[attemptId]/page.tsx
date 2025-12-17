@@ -47,7 +47,7 @@ export default function AttemptResults({
     <div className="flex-1 w-full flex flex-col gap-16 py-10 md:py-16 mx-auto max-w-4xl px-4">
       {isLoading ? (
         <div className="w-full flex justify-center py-8">
-          <Loader2 className="animate-spin" />
+          <span className="loader"></span>
         </div>
       ) : (
         attempt && (

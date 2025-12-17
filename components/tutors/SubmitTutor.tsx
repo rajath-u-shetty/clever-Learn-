@@ -88,7 +88,7 @@ export function SubmitTutor({
           </Button>
           <Button type="submit">
             Submit{" "}
-            {isLoading && <Loader2 className="h-4 w-4 ml-2 animate-spin" />}
+            {isLoading && <span className="loader ml-2 h-4 w-4" />}
           </Button>
         </div>
       </form>

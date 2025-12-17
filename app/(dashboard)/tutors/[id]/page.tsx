@@ -75,7 +75,7 @@ export default function TutorPage({ params }: { params: { id: string } }) {
     <div className="flex flex-col flex-1 max-w-4xl mx-auto w-full pt-10 md:pt-16 px-4 gap-10">
       {isLoading ? (
         <div className="flex w-full justify-center py-8">
-          <Loader2 className="animate-spin" />
+          <span className="loader"></span>
         </div>
       ) : (
         tutor && (

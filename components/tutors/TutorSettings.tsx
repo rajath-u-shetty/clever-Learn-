@@ -220,7 +220,7 @@ export function TutorSettings({ tutor }: { tutor: Tutor }) {
               <Button type="submit">
                 Submit{" "}
                 {isTutorEditing && (
-                  <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+                  <span className="loader ml-2 h-4 w-4" />
                 )}
               </Button>
             </div>

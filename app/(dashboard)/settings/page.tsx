@@ -130,7 +130,7 @@ export default function Settings() {
       </div>
       {isLoading ? (
         <div className="w-full flex justify-center">
-          <Loader2 className="animate-spin" />
+          <span className="loader"></span>
         </div>
       ) : (
         <>
@@ -187,7 +187,7 @@ export default function Settings() {
                 <Button type="submit" className="md:w-fit">
                   Update Profile
                   {updating && (
-                    <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+                    <span className="loader"></span>
                   )}
                 </Button>
               </form>

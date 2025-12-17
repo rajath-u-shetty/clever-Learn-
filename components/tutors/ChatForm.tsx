@@ -57,7 +57,7 @@ export function ChatForm({
           <Button type="submit" disabled={isLoading} ref={buttonRef}>
             Send{" "}
             {isLoading ? (
-              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+              <span className="loader ml-2 h-4 w-4" />
             ) : (
               <ArrowRightCircle className="h-4 w-4 ml-2" />
             )}

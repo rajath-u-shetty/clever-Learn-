@@ -131,7 +131,7 @@ export default function QuizAttempt({ params }: { params: { id: string } }) {
     <div className="flex-1 w-full flex flex-col gap-16 py-10 md:py-16 mx-auto max-w-4xl px-4">
       {isQuizLoading ? (
         <div className="w-full flex justify-center py-8">
-          <Loader2 className="animate-spin" />
+            <span className="loader"></span>
         </div>
       ) : (
         quiz && (
@@ -160,7 +160,7 @@ export default function QuizAttempt({ params }: { params: { id: string } }) {
                   <Button className="w-full">
                     Submit{" "}
                     {isSubmitting ? (
-                      <Loader2 className="h-4 w-4 ml-2 animate-spin" />
+                      <span className="loader"></span>
                     ) : (
                       <ArrowRight className="h-4 w-4 ml-2" />
                     )}

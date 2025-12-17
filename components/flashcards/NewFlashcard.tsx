@@ -124,7 +124,7 @@ export function NewFlashcard({ set }: { set: FlashcardSet }) {
           />
           <Button className="w-full" type="submit">
             Submit{" "}
-            {isAdding && <Loader2 className="h-4 w-4 ml-2 animate-spin" />}
+            {isAdding && <span className="loader ml-2"></span>}
           </Button>
         </form>
       </Form>

@@ -19,7 +19,7 @@ export function AuthButton() {
       className="w-full"
     >
       {isLoading ? (
-        <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+        <span className="loader"></span>
       ) : (
         <FaGoogle className="h-4 w-4 mr-2" />
       )}
