@@ -48,11 +48,6 @@ const cards = [
     icon: <MessagesSquare className="h-4 w-4 mr-2" />,
     description: "View, create, edit, and deleted AI tutors!",
     href: "/tutors",
-  },{
-    title: "Summary",
-    icon: <StickyNote className="h-4 w-4 mr-2" />,
-    description: "Summarise youtube videos",
-    href: "/summarise"
   }
 ];
 
@@ -182,7 +177,7 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
         </div>
-        <div className="grid md:grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {cards.map((card) => (
             <Link
               href={card.href}

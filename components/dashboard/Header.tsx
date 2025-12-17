@@ -23,7 +23,6 @@ export function Header() {
           <HeaderLink href="/flashcard-sets">Flashcards</HeaderLink>
           <HeaderLink href="/tutors">AI Tutors</HeaderLink>
           <HeaderLink href="/quizzes">Quizzes</HeaderLink>
-          <HeaderLink href="/summarise">Summarise</HeaderLink>
         </div>
       </div>
 
