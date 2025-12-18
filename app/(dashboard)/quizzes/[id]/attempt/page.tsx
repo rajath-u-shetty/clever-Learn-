@@ -160,7 +160,7 @@ export default function QuizAttempt({ params }: { params: { id: string } }) {
                   <Button className="w-full">
                     Submit{" "}
                     {isSubmitting ? (
-                      <span className="loader"></span>
+                      <Loader2 className="h-4 w-4 ml-2 animate-spin" />
                     ) : (
                       <ArrowRight className="h-4 w-4 ml-2" />
                     )}

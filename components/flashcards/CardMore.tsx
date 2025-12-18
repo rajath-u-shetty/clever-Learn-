@@ -211,7 +211,7 @@ export function CardMore({
             />
             <Button className="w-full" type="submit">
               Submit{" "}
-              {isUpdating && <span className="loader ml-2"></span>}
+              {isUpdating && <Loader2 className="h-4 w-4 ml-2 animate-spin" />}
             </Button>
           </form>
         </Form>

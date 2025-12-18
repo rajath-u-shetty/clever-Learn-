@@ -152,7 +152,7 @@ export function FormSubmit({
             Back
           </Button>
           <Button type="submit">
-            Submit {isLoading && <span className="loader ml-2 h-4 w-4" />}
+            Submit {isLoading && <Loader2 className="h-4 w-4 ml-2 animate-spin" />}
           </Button>
         </div>
       </form>

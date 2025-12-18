@@ -187,7 +187,7 @@ export default function Settings() {
                 <Button type="submit" className="md:w-fit">
                   Update Profile
                   {updating && (
-                    <span className="loader"></span>
+                    <Loader2 className="h-4 w-4 ml-2 animate-spin" />
                   )}
                 </Button>
               </form>

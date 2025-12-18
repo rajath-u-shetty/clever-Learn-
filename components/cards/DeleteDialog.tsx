@@ -33,7 +33,7 @@ export function DeleteDialog({
             className="bg-destructive hover:bg-destructive/90 text-white"
           >
             Delete
-            {isDeleting && <span className="loader ml-2 h-4 w-4" />}
+            {isDeleting && <Loader2 className="h-4 w-4 ml-2 animate-spin" />}
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogHeader>

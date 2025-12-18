@@ -132,7 +132,7 @@ export function FormConfig({
           <Button className="w-fit" variant="default" onClick={handleContinue}>
             Continue{" "}
             {isLoading ? (
-              <span className="loader ml-2 h-4 w-4" />
+              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
             ) : (
               <ArrowRight className="h-4 w-4 ml-2" />
             )}
@@ -150,7 +150,7 @@ export function FormConfig({
           <Button className="w-fit" variant="default" onClick={handleContinue}>
             Continue{" "}
             {isLoading ? (
-              <span className="loader ml-2 h-4 w-4" />
+              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
             ) : (
               <ArrowRight className="h-4 w-4 ml-2" />
             )}
@@ -168,7 +168,7 @@ export function FormConfig({
           <Button className="w-fit" variant="default" onClick={handleContinue}>
             Continue{" "}
             {isLoading ? (
-              <span className="loader ml-2 h-4 w-4" />
+              <Loader2 className="h-4 w-4 ml-2 animate-spin" />
             ) : (
               <ArrowRight className="h-4 w-4 ml-2" />
             )}
